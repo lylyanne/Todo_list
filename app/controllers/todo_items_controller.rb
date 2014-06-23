@@ -10,7 +10,6 @@ class TodoItemsController < ApplicationController
   end
 
   def create
-  	
   	@todo_item = @todo_list.todo_items.new(todo_item_params)
   	if @todo_item.save
   		flash[:success] = "Added todo list item."
